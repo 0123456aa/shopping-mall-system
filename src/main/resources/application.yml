@@ -1,0 +1,24 @@
+# Application Configuration for Spring Boot
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/mydb
+    username: user
+    password: password
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+jwt:
+  secret: mySecretKey
+  expiration: 3600
+  header: Authorization
+
+server:
+  port: 8080
+
+# Other Configuration Settings
+other:
+  someSetting: value
