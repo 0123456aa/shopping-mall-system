@@ -1,0 +1,13 @@
+# Development Configuration
+
+# Application properties for development
+spring:
+  profiles:
+    active: dev
+server:
+  port: 8080
+logging:
+  level:
+    root: DEBUG
+
+# Add additional configuration settings here
